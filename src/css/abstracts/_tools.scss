@@ -1,0 +1,50 @@
+// @font-face {
+//     font-family: "Jua", sans-serif;
+//     src: url('../../fonts/Jua-Regular.ttf') format('ttf');
+// }
+$color-bg-primary: #F3E2D8;
+$color-bg-secondary: #E08D73;
+$color-neutral-dark: #000000;
+$color-neutral-light: #FFFFFF;
+
+
+$gap-small: 10%;
+$gap-medium: 20%;
+
+
+$font-family: "Jua", sans-serif;
+$font-size: 14px;
+$font-size-large: 32px;
+$font-size-medium: 18px;
+$upper-case-text-transformation: uppercase;
+
+$font-weight: 400;
+
+$container-width: 77%;
+$button-border-radius: 10px; 
+
+@mixin info-action-button {
+    display: flex;
+    background-color: $color-bg-secondary;
+    color: $color-neutral-light;
+    font-size: $font-size-medium;
+    white-space: nowrap;
+    text-align: center;
+    padding: 12px;
+    border-radius: $button-border-radius;
+    width: fit-content;
+}
+
+@mixin display-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin img-bg-position {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
