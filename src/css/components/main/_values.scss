@@ -1,0 +1,28 @@
+@use "../../abstracts" as *;
+
+.values {
+    @include img-bg-position;
+    background-image: url(../imgs/bg-main.svg);
+    height: 100vh;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-medium;
+        padding-right: 55%;
+        padding-bottom: 4%;
+        padding-top: 3%;
+    }
+    &__btn {
+        @include info-action-button;
+        gap: 2%;
+    }
+    &__heading {
+        font-size: 38px;
+        padding-top: 10%;
+    }
+    &__text {
+        font-size: $font-size-medium;
+        padding-top: 8%;
+        line-height: 29px;
+    }
+}
