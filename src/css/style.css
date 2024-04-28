@@ -131,15 +131,13 @@ a {
   width: 100%;
   position: relative;
   background-image: url(../imgs/bg-main.svg);
-  height: 100vh;
+  height: 60vh;
 }
 .values__wrap {
   display: flex;
   flex-direction: column;
   gap: 20%;
-  padding-right: 55%;
-  padding-bottom: 4%;
-  padding-top: 3%;
+  padding: 5% 55% 0 0;
 }
 .values__btn {
   display: flex;
