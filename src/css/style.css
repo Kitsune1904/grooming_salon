@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,8 +50,8 @@ table {
 }
 
 .container {
-  width: 77%;
-  margin: auto;
+  width: 70vw;
+  margin: 0 auto;
 }
 
 * {
@@ -71,59 +72,81 @@ a {
   text-decoration: none;
 }
 
-.navbar {
+footer {
   background-color: #F3E2D8;
 }
-.navbar__wrap {
+footer .contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F3E2D8;
-  padding: 0.5% 0;
-  gap: 10%;
 }
-.navbar__logo {
+footer .contact .soсial-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  white-space: nowrap;
-  gap: 10%;
+  width: -moz-max-content;
+  width: max-content;
 }
-.navbar__heading {
-  font-size: 32px;
-}
-.navbar__nav {
+footer .contact .soсial-media__img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20%;
-  margin-right: 10%;
-}
-.navbar__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10%;
-}
-.navbar__link {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #000000;
-}
-.navbar__btn {
-  display: flex;
-  background-color: #E08D73;
-  color: #FFFFFF;
-  font-size: 18px;
-  white-space: nowrap;
-  text-align: center;
-  padding: 12px;
-  border-radius: 10px;
   width: -moz-fit-content;
   width: fit-content;
-  text-transform: uppercase;
+}
+footer .contact .soсial-media__item {
+  margin: 5%;
+}
+footer .contact .soсial-media__item img {
+  vertical-align: middle;
 }
 
+/* .navbar {
+  background-color: $color-bg-primary;
+
+  &__wrap {
+    @include display-flex-row;
+    background-color: $color-bg-primary;
+    padding: 0.5% 0;
+    gap: $gap-small;
+  }
+
+  &__logo {
+    @include display-flex-row;
+    white-space: nowrap;
+    gap: $gap-small;
+  }
+  &__heading {
+    font-size: $font-size-large;
+  }
+  &__nav {
+    @include display-flex-row;
+    gap: $gap-medium;
+  }
+  &__list {
+    @include display-flex-row;
+  }
+  &__link {
+    font-size: $font-size-medium;
+    text-transform: $upper-case-text-transformation;
+    color: $color-neutral-dark;
+    margin: 0 10px;
+  }
+  &__btn {
+    @include info-action-button;
+    text-transform: $upper-case-text-transformation;
+  }
+} */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: #F3E2D8;
+}
+header .navbar__logo {
+  display: flex;
+  align-items: center;
+}
 .values {
   background-position: center;
   background-repeat: no-repeat;

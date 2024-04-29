@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar__logo">
+        <img class="navbar__pic" src="../src/imgs/logo-paws.png" alt="paws" />
+        <h1 class="navbar__heading">Happy Paws</h1>
+      </div>
+      <div class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">about</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">services</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__btn" href="#">make appointment</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container form-holder">
+        <h2>Appointment form</h2>
+        <form action="">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="your name" />
+          </div>
+          <div>
+            <label for="mail">E-mail</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="your_email@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="+123-255-648-957"
+            />
+          </div>
+          <div>
+            <label for="animal">Animal</label>
+            <select name="animal" id="animal">
+              <option selected="selected" disabled>choose your animal</option>
+              <option value="cat">cat</option>
+              <option value="dog">dog</option>
+            </select>
+          </div>
+          <div>
+            <label for="service">Service</label>
+            <select name="service" id="service">
+              <option selected="selected" disabled>choose service</option>
+              <option value="cat">full groom</option>
+              <option value="dog">bath</option>
+            </select>
+          </div>
+          <div>
+            <p>Chooose add-ons</p>
+            <input type="radio">
+            <label for="teeth">Teeth Brushing</label>
+          </div>
+        </form>
+      </div>
+      
+    </main>
+    <footer class="">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__copyright">
+            <p class="contact__city">
+              Copyright 2024 © Happy Paws. Ukraine, Odessa.
+            </p>
+          </div>
+          <div class="soсial-media">
+            <p class="soсial-media__label">Find us in social media:</p>
+            <div class="soсial-media__img">
+              <a class="soсial-media__item" href=""
+                ><img src="../src/imgs/fb.svg" alt="fb"
+              /></a>
+              <a class="soсial-media__item" href=""
+                ><img src="../src/imgs/insta.svg" alt="insta"
+              /></a>
+              <a class="soсial-media__item" href="">
+                <img src="../src/imgs/telega.svg" alt="telegram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

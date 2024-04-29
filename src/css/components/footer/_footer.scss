@@ -1,0 +1,29 @@
+@use "../../abstracts" as *;
+
+footer {
+  background-color: $color-bg-primary;
+
+  .contact {
+    @include display-flex-row;
+
+    .soсial-media {
+      @include display-flex-row;
+      width: max-content;
+
+      &__img {
+        @include display-flex-row;
+        width: fit-content;
+      }
+
+      &__item {
+        margin: 5%;
+
+        img {
+          vertical-align: middle;
+
+        }
+
+      }
+    }
+  }
+}
