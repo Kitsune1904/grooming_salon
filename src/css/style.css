@@ -72,6 +72,105 @@ a {
   text-decoration: none;
 }
 
+main .about-holder,
+main .hostory-holder {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 2% 15%;
+}
+main .about-holder .text h2,
+main .hostory-holder .text h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+main .about-holder .text p,
+main .hostory-holder .text p {
+  font-family: Arial;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+main .about-holder .picture img,
+main .hostory-holder .picture img {
+  width: 100%;
+}
+main .hostory-holder {
+  background-color: #F3E2D8;
+}
+main .staff {
+  padding: 2% 15%;
+}
+main .staff h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .staff .tabs {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #F3E2D8;
+  height: 60px;
+  padding: 10px;
+  border-radius: 8px;
+}
+main .staff .tabs .tab {
+  display: block;
+}
+main .staff .tabs .tab input[type=radio] {
+  position: absolute;
+  left: -99999px;
+}
+main .staff .tabs .tab label {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  color: #000000;
+  background: #F3E2D8;
+}
+main .staff .tabs .tab label img {
+  margin-right: 10px;
+}
+main .staff .tabs .content {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  padding: 20px 0 50px 0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  color: #000000;
+}
+main .staff .tabs .content .card {
+  text-align: center;
+}
+main .staff .tabs .content .card img {
+  width: 90%;
+}
+main .staff .tabs .content .card h3 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+main .staff .tabs .content .card p {
+  font-family: Arial;
+}
+main .staff .tabs .tab > [id^=tab]:checked + label {
+  top: 0;
+  background: #FFFFFF;
+  color: #000000;
+}
+main .staff .tabs .tab > [id^=tab]:checked ~ [id^=tab-content] {
+  display: grid;
+}
+
 .appointment {
   background-image: url("../imgs/bg_form.png");
   background-position: center;
@@ -83,7 +182,7 @@ a {
   justify-content: space-between;
 }
 .appointment main {
-  padding: 0.5% 10%;
+  padding: 0.5% 15%;
 }
 .appointment main .form-holder {
   display: flex;
@@ -91,7 +190,7 @@ a {
   justify-content: center;
   border-radius: 10px;
   padding: 40px;
-  width: 500px;
+  width: 550px;
   height: 550px;
   background: rgba(255, 255, 255, 0.16);
   border-radius: 16px;
@@ -127,12 +226,18 @@ a {
 .appointment main .form-holder .special p {
   font-size: 18px;
 }
-.appointment main .form-holder .special div {
+.appointment main .form-holder .special .holder {
   margin: 10px 0;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.appointment main .form-holder .special div input {
-  margin-right: 10px;
+.appointment main .form-holder .special .holder div {
+  width: 230px;
+  margin-bottom: 10px;
+}
+.appointment main .form-holder .special .holder div input {
+  margin-right: 5px;
 }
 .appointment main .form-holder button {
   background-color: #E08D73;
@@ -151,7 +256,7 @@ a {
 }
 
 footer {
-  padding: 0.5% 10%;
+  padding: 0.5% 15%;
   background-color: #F3E2D8;
   display: flex;
   justify-content: space-between;
@@ -170,7 +275,7 @@ footer .soсial-media p {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5% 10%;
+  padding: 0.5% 15%;
   background-color: #F3E2D8;
 }
 header .logo {
