@@ -73,80 +73,71 @@ a {
 }
 
 footer {
+  padding: 0.5% 10%;
   background-color: #F3E2D8;
-}
-footer .contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer .contact .soсial-media {
+footer .soсial-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: -moz-max-content;
-  width: max-content;
 }
-footer .contact .soсial-media__img {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-footer .contact .soсial-media__item {
-  margin: 5%;
-}
-footer .contact .soсial-media__item img {
-  vertical-align: middle;
+footer .soсial-media p {
+  margin-right: 10px;
 }
 
-/* .navbar {
-  background-color: $color-bg-primary;
-
-  &__wrap {
-    @include display-flex-row;
-    background-color: $color-bg-primary;
-    padding: 0.5% 0;
-    gap: $gap-small;
-  }
-
-  &__logo {
-    @include display-flex-row;
-    white-space: nowrap;
-    gap: $gap-small;
-  }
-  &__heading {
-    font-size: $font-size-large;
-  }
-  &__nav {
-    @include display-flex-row;
-    gap: $gap-medium;
-  }
-  &__list {
-    @include display-flex-row;
-  }
-  &__link {
-    font-size: $font-size-medium;
-    text-transform: $upper-case-text-transformation;
-    color: $color-neutral-dark;
-    margin: 0 10px;
-  }
-  &__btn {
-    @include info-action-button;
-    text-transform: $upper-case-text-transformation;
-  }
-} */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0.5% 10%;
   background-color: #F3E2D8;
 }
-header .navbar__logo {
+header .logo {
   display: flex;
   align-items: center;
 }
+header .logo img {
+  margin-right: 10px;
+}
+header .logo h1 {
+  font-size: 32px;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav ul {
+  display: flex;
+}
+header .nav ul li {
+  text-align: center;
+  margin-left: 20px;
+}
+header .nav ul li a {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+}
+header .nav ul li a:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #ed7651;
+}
+header .nav ul li .special-btn {
+  background-color: #E08D73;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 8px;
+}
+header .nav ul li .special-btn:hover {
+  background-color: #ed7651;
+  color: #FFFFFF;
+  box-shadow: 0 0 8px 8px rgba(255, 106, 61, 0.5137254902);
+}
+
 .values {
   background-position: center;
   background-repeat: no-repeat;

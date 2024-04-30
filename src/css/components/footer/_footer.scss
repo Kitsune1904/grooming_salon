@@ -1,29 +1,19 @@
 @use "../../abstracts" as *;
 
 footer {
+  padding: 0.5% 10%;
   background-color: $color-bg-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  .contact {
-    @include display-flex-row;
+  .soсial-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .soсial-media {
-      @include display-flex-row;
-      width: max-content;
-
-      &__img {
-        @include display-flex-row;
-        width: fit-content;
-      }
-
-      &__item {
-        margin: 5%;
-
-        img {
-          vertical-align: middle;
-
-        }
-
-      }
+    p {
+      margin-right: 10px;
     }
   }
 }
