@@ -72,6 +72,70 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-image: url("../imgs/bg_form.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main {
+  padding: 0.5% 10%;
+}
+body main .form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.507);
+}
+body main .form-holder h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+body main .form-holder .simple div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+body main .form-holder .simple div label {
+  font-size: 18px;
+}
+body main .form-holder .simple div input,
+body main .form-holder .simple div select {
+  width: 250px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+}
+body main .form-holder .special p {
+  font-size: 18px;
+}
+body main .form-holder .special div {
+  margin: 10px 0;
+  display: flex;
+}
+body main .form-holder .special div input {
+  margin-right: 10px;
+}
+body main .form-holder button {
+  background-color: #E08D73;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: "Jua", sans-serif;
+  margin-top: 10px;
+}
+
 footer {
   padding: 0.5% 10%;
   background-color: #F3E2D8;

@@ -40,48 +40,59 @@
       </div>
     </header>
     <main>
-      <div class="container form-holder">
+      <div class="form-holder">
         <h2>Appointment form</h2>
-        <form action="">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="your name" />
+        <form method="POST" action="https://fom.in.ua/echo">
+          <div class="simple">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="your name"
+                required 
+              />
+            </div>
+            <div>
+              <label for="mail">E-mail</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="your_email@gmail.com"
+                required 
+              />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="+123-255-648-957"
+                required 
+              />
+            </div>
+            <div>
+              <label for="animal">Animal</label>
+              <select name="animal" id="animal" required >
+                <option selected="selected" disabled>choose your animal</option>
+                <option value="cat">cat</option>
+                <option value="dog">dog</option>
+              </select>
+            </div>
+            <div>
+              <label for="service">Service</label>
+              <select name="service" id="service" required >
+                <option selected="selected" disabled>choose service</option>
+                <option value="full groom">full groom</option>
+                <option value="bath">bath</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label for="mail">E-mail</label>
-            <input
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="your_email@gmail.com"
-            />
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input
-              type="phone"
-              name="phone"
-              id="phone"
-              placeholder="+123-255-648-957"
-            />
-          </div>
-          <div>
-            <label for="animal">Animal</label>
-            <select name="animal" id="animal">
-              <option selected="selected" disabled>choose your animal</option>
-              <option value="cat">cat</option>
-              <option value="dog">dog</option>
-            </select>
-          </div>
-          <div>
-            <label for="service">Service</label>
-            <select name="service" id="service">
-              <option selected="selected" disabled>choose service</option>
-              <option value="cat">full groom</option>
-              <option value="dog">bath</option>
-            </select>
-          </div>
-          <div>
+
+          <div class="special">
             <p>Chooose add-ons</p>
             <div>
               <input
@@ -90,7 +101,7 @@
                 name="add-ons"
                 value="Teeth Brushing"
               />
-              <label for="teeth">Teeth Brushing</label>
+              <label for="teeth">teeth brushing</label>
             </div>
             <div>
               <input
@@ -99,27 +110,28 @@
                 name="add-ons"
                 value="paw soothing treatment"
               />
-              <label for="paws">Paw Soothing Treatment</label>
+              <label for="paws">paw soothing treatment</label>
             </div>
             <div>
-                <input
-                  type="checkbox"
-                  id="gland"
-                  name="add-ons"
-                  value="anal gland expression"
-                />
-                <label for="gland">Anal Gland Expression (only dogs)</label>
-              </div>
-              <div>
-                <input
-                  type="checkbox"
-                  id="massage"
-                  name="add-ons"
-                  value="deep muscle massage"
-                />
-                <label for="massage">Deep Muscle Massage (only dogs)</label>
-              </div>
+              <input
+                type="checkbox"
+                id="gland"
+                name="add-ons"
+                value="anal gland expression"
+              />
+              <label for="gland">anal gland expression (only dogs)</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="massage"
+                name="add-ons"
+                value="deep muscle massage"
+              />
+              <label for="massage">deep muscle massage (only dogs)</label>
+            </div>
           </div>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </main>
