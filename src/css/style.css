@@ -399,7 +399,7 @@ header .nav ul li .special-btn:hover {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4% 2%;
+  gap: 30px;
 }
 .services__wrap :nth-child(2) p {
   background-color: #866D66;
@@ -426,7 +426,7 @@ header .nav ul li .special-btn:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2vw;
+  font-size: 26px;
   height: 100px;
   margin-top: -5px;
   padding: 0 10px;
