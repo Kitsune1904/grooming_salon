@@ -382,7 +382,7 @@ header .nav ul li .special-btn:hover {
   line-height: 1.2;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 800px) {
   .values {
     height: 30vh;
   }
