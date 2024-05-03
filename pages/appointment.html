@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body class="appointment">
+    <header>
+      <div class="logo">
+        <a href="">
+          <img src="../src/imgs/logo-paws.png" alt="paws" />
+        </a>
+        <h1>Happy Paws</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="../index.html">home</a>
+          </li>
+          <li>
+            <a href="../pages/about.html">about</a>
+          </li>
+          <li>
+            <a href="../pages/services.html">services</a>
+          </li>
+          <li>
+            <a href="#" class="special-btn">appointment</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="form-holder">
+        <h2>Appointment form</h2>
+        <form method="POST" action="https://fom.in.ua/echo">
+          <div class="simple">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="your name"
+                required
+              />
+            </div>
+            <div>
+              <label for="mail">E-mail</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="your_email@gmail.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="+123-255-648-957"
+                required
+              />
+            </div>
+            <div>
+              <label for="animal">Animal</label>
+              <select name="animal" id="animal" required>
+                <option selected="selected" disabled>choose your animal</option>
+                <option value="cat">cat</option>
+                <option value="dog">dog</option>
+              </select>
+            </div>
+            <div>
+              <label for="service">Service</label>
+              <select name="service" id="service" required>
+                <option selected="selected" disabled>choose service</option>
+                <option value="full groom">full groom</option>
+                <option value="bath">bath</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="special">
+            <p>Chooose add-ons</p>
+            <div class="holder">
+              <div>
+                <input
+                  type="checkbox"
+                  id="teeth"
+                  name="add-ons"
+                  value="Teeth Brushing"
+                />
+                <label for="teeth">teeth brushing</label>
+              </div>
+              <div>
+                  <input
+                  type="checkbox"
+                  id="gland"
+                  name="add-ons"
+                  value="anal gland expression"
+                  />
+                  <label for="gland">anal gland expression (only dogs)</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="paws"
+                    name="add-ons"
+                    value="paw soothing treatment"
+                  />
+                  <label for="paws">paw soothing treatment</label>
+                </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="massage"
+                  name="add-ons"
+                  value="deep muscle massage"
+                />
+                <label for="massage">deep muscle massage (only dogs)</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="copyright">
+        <p>Copyright 2024 © Happy Paws. Ukraine, Odessa.</p>
+      </div>
+      <div class="soсial-media">
+        <p>Find us in social media:</p>
+        <div class="img-holder">
+          <a href="https://www.facebook.com/?locale=en_US"
+            ><img src="../src/imgs/fb.svg" alt="fb"
+          /></a>
+          <a href="https://en.m.wikipedia.org/wiki/Instagram"
+            ><img src="../src/imgs/insta.svg" alt="insta"
+          /></a>
+          <a href="https://en.wikipedia.org/wiki/Telegram_(software)">
+            <img src="../src/imgs/telega.svg" alt="telegram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

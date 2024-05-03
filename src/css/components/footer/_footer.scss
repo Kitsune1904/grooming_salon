@@ -1,0 +1,20 @@
+@use "../../abstracts" as *;
+
+footer {
+  padding: 0.5% 15%;
+  background-color: $color-bg-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial;
+
+  .soсial-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin-right: 10px;
+    }
+  }
+}

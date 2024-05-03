@@ -1,0 +1,49 @@
+@use "../../abstracts" as *;
+
+.services {
+    padding: 0 15%;
+    h2 {
+        font-size: $font-size-largeL;
+        text-align: $text-align-center;
+        margin: 20px 0
+    }
+    &__wrap {
+        @include grid-center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4% 2%;
+        :nth-child(2) p {
+            background-color: $color-services-molt-cats;
+        }
+        :nth-child(3) p {
+            background-color: $color-services-nails-dogs;
+        }
+        :nth-child(4) p {
+            background-color: $color-services-comp-cats;
+        }
+        :nth-child(5) p {
+            background-color: $color-services-molt-dogs;
+        }
+        :nth-child(6) p {
+            background-color: $color-services-nails-cats;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        background-color: $color-services-comp-dogs;
+        color: $color-neutral-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2vw;
+        height: 100px;
+        margin-top: -5px;
+        padding: 0 10px;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-shadow: $color-text-shadow;
+    }
+}

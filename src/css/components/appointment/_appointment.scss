@@ -1,0 +1,102 @@
+@use "../../abstracts" as *;
+
+.appointment {
+  background-image: url("../imgs/bg_form.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  main {
+    padding: 5% 15%;
+
+    .form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 40px;
+      width: 550px;
+      height: 550px;
+      transform: translate(10%, 20%);      background: rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5.3px);
+      -webkit-backdrop-filter: blur(5.3px);
+      border: 1px solid rgba(255, 255, 255, 0.33);
+
+      h2 {
+        font-size: $font-size-large;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .simple {
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+          background-color: rgba(255, 255, 255, 0.397);
+          border-radius: 8px;
+          padding: 5px;
+
+          label {
+            font-size: $font-size-medium;
+          }
+
+          input,
+          select {
+            width: 250px;
+            padding: 5px;
+            border: none;
+            border-radius: 8px;
+          }
+        }
+      }
+      .special {
+        p {
+          font-size: $font-size-medium;
+        }
+
+        .holder {
+          margin: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          div {
+            width: 230px;
+            margin-bottom: 10px;
+            input {
+            margin-right: 5px;
+          }
+          }
+
+          
+        }
+      }
+
+      button {
+        background-color: $color-bg-secondary;
+        border: none;
+        width: 100%;
+        border-radius: 8px;
+        color: $color-neutral-light;
+        font-size: $font-size-large;
+        font-family: $font-family;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #ed7651;
+        color: $color-neutral-light;
+        box-shadow: 0 0 8px 8px #ff6a3d83;
+        transition: 0.5s;
+      }
+    }
+  }
+}

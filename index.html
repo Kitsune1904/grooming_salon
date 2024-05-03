@@ -1,94 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="container navbar__wrap">
-                <div class="navbar__logo">
-                    <img class="navbar__pic" src="src/imgs/logo-paws.png" alt="paws">
-                    <h1 class="navbar__heading">Happy Paws</h1>
-                </div>
-                <nav class="navbar__nav">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">about</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">services</a>
-                        </li>
-                    </ul>
-                    <a class="navbar__btn" href="#">make appointment</a>
-                </nav>
-            </div>
-        </div>
+      <div class="logo">
+        <a href="#">
+          <img src="./src/imgs/logo-paws.png" alt="paws" />
+        </a>
+        <h1>Happy Paws</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="./pages/about.html">about</a>
+          </li>
+          <li>
+            <a href="./pages/services.html">services</a>
+          </li>
+          <li>
+            <a href="./pages/appointment.html" class="special-btn">appointment</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-        <div class="values">
-            <div class="container values__wrap">
-                <a class="values__btn" href="#">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    <p class="values__link">10% discount on first visit</p>
-                </a>
-                <div class="values__desc">
-                    <h2 class="values__heading">Stylish and healthy pet in Happy Paws</h2>
-                    <p class="values__text">We combine breed grooming standards with new 
-                    techniques and the wishes of the owners. We 
-                    monitor the health of our pets and provide 
-                    them with care and attention.</p>
-                </div>
-            </div>
+      <div class="values">
+        <div class="values__wrap">
+          <a class="values__btn" href="./pages/appointment.html">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <p>10% discount on first visit</p>
+          </a>
+          <div>
+            <h2>Stylish and healthy pet in Happy Paws</h2>
+            <p class="values__text">
+              We combine breed grooming standards with new techniques and the
+              wishes of the owners. We monitor the health of our pets and
+              provide them with care and attention.
+            </p>
+          </div>
         </div>
-        <div class="services">
-            <h2>Popular services</h2>
-            <div class="services__container">
-                <div class="services__type">Comprehensive dogs care</div>
-                <div class="services__type">Express molt cats</div>
-                <div class="services__type">Nail trimming dogs</div>  
-                <div class="services__type">Comprehensive cats care</div>
-                <div class="services__type">Express molt dogs</div>
-                <div class="services__type">Nail trimming cats</div>
-            </div>
+      </div>
+      <div class="services">
+        <h2>Popular services</h2>
+        <div class="services__wrap">
+          <div>
+            <img src="src/imgs/main-grid-1.svg" alt="white dog" />
+            <p>Comprehensive dogs care</p>
+          </div>
+          <div>
+            <img src="src/imgs/main-grid-2.svg" alt="angry cat" />
+            <p>Express molt cats</p>
+          </div>
+          <div>
+            <img src="src/imgs/main-grid-3.svg" alt="nails dog" />
+            <p>Nail trimming dogs</p>
+          </div>
+          <div>
+            <img src="src/imgs/main-grid-4.svg" alt="bathing cat" />
+            <p>Comprehensive cats care</p>
+          </div>
+          <div>
+            <img src="src/imgs/main-grid-5.svg" alt="red dog" />
+            <p>Express molt dogs</p>
+          </div>
+          <div>
+            <img src="src/imgs/main-grid-6.svg" alt="nails cat" />
+            <p>Nail trimming cats</p>
+          </div>
         </div>
-        <div class="about">
-            <img class="about__pic" src="" alt="we are">
-            <div class="about__desc">
-                <h2 about__heading>Happy Paws grooming</h2>
-                <p class="about__text">Pets always attract attention, and the whole
-                world admires pets with smooth and beautifulfur. 
-                We invite you to a premium pet salon!</p>
-                <a class="about__btn" href="#">More about us</a>
-            </div>
+      </div>
+      <div class="about">
+        <div class=" about__salon">
+          <img src="src/imgs/main-about.svg" alt="salon" />
+          <p>Happy Paws grooming</p>
+          <p>
+            Pets always attract attention, and the whole world admires pets with
+            smooth and beautifulfur. We invite you to a premium pet salon!
+          </p>
+          <a href="./pages/about.html"><span>More about us</span></a>
         </div>
-        <div class="gallery">
+      </div>
+      <div class="gallery">
+        <h2>Before/After Grooming</h2>
+        <div class="gallery__wrap">
+          <button class="prev"></button>
+          <div class="imgs">
+            <img
+              src="src/imgs/slider/red-poodle.jpg"
+              alt="one"
+              class="current"
+            />
+            <img src="src/imgs/slider/yellow-dog.jpg" alt="one" />
+            <img src="src/imgs/slider/white-black-dog.jpg" alt="one" />
+            <img src="src/imgs/slider/small-yellow-dog.jpg" alt="one" />
+            <img src="src/imgs/slider/small-white-black-dog.webp" alt="one" />
+            <img src="src/imgs/slider/small-white-dog.jpg" alt="one" />
+            <img src="src/imgs/slider/sweet-white-dog.jpg" alt="one" />
+            <img src="src/imgs/slider/yellow-dog.jpg" alt="one" />
+          </div>
+          <button class="next"></button>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="contact">
-            <div class="contact__copyright">
-                <p class="contact__city">Copyright 2024 © Happy Paws. Ukraine, Odessa.</p>
-            </div>
-            <div class="sotial-media">
-                <p class="sotial-media__label">Find us in social media</p>
-                <div class="sotial-media__img">
-                    <img class="sotial-media__item" src="" alt="fb">
-                    <img class="sotial-media__item" src="" alt="insta">
-                    <img class="sotial-media__item" src="" alt="telegram">
-                </div>
-            </div>
+      <div class="copyright">
+        <p>Copyright 2024 © Happy Paws. Ukraine, Odessa.</p>
+      </div>
+      <div class="soсial-media">
+        <p>Find us in social media:</p>
+        <div class="img-holder">
+          <a href="https://www.facebook.com/?locale=en_US"
+            ><img src="./src/imgs/fb.svg" alt="fb"
+          /></a>
+          <a href="https://en.m.wikipedia.org/wiki/Instagram"
+            ><img src="./src/imgs/insta.svg" alt="insta"
+          /></a>
+          <a href="https://en.wikipedia.org/wiki/Telegram_(software)">
+            <img src="./src/imgs/telega.svg" alt="telegram"
+          /></a>
         </div>
+      </div>
     </footer>
-</body>
+    <script src="./gallery.js"></script>
+  </body>
 </html>

@@ -1,0 +1,60 @@
+@use "../../abstracts" as *;
+
+.gallery {
+    @include display-flex-column;  
+    margin: 0;
+    margin-bottom: 10%;
+
+    h2 {
+        color: $color-neutral-dark;
+        text-align: center;
+        font-size: $font-size-largeL;
+        padding-bottom: 4%;
+    }
+
+    .imgs {
+        @include display-flex-row-center;
+        text-align: center;
+        width: 40%;
+        height: 400px;
+        overflow: hidden;
+        margin: 0;
+        .current {
+            opacity: 1;
+        }
+        img {
+            position: absolute;
+            opacity: 0;
+            transition: all .8s;
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    &__wrap {
+        @include display-flex-row-center;
+    }
+
+    button {
+        margin: 20px 50px 0;
+        width: 75px;
+        height: 75px;
+        border: none;
+        transition: all .3s;
+    }
+
+    .prev {
+        background: url(../imgs/slider/prev.png) center center no-repeat;
+    }
+    .prev:hover, .next:hover {
+        filter: drop-shadow(0 0 20px #ff5f2f);
+        cursor: pointer;
+      }
+    .next {
+        background: url(../imgs/slider/next.png) center center no-repeat;
+    }
+
+    .prev .next {
+        background-size: cover;
+    }
+}
