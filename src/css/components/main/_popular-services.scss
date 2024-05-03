@@ -10,7 +10,7 @@
     &__wrap {
         @include grid-center;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 4% 2%;
+        gap: 30px;
         :nth-child(2) p {
             background-color: $color-services-molt-cats;
         }
@@ -37,7 +37,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 2vw;
+        font-size: $font-size-medium-large;
         height: 100px;
         margin-top: -5px;
         padding: 0 10px;
