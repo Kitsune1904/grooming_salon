@@ -134,7 +134,8 @@ a {
   background-color: #F3E2D8;
   margin-right: 10px;
 }
-.main-about .staff .tab-holder ul a:active, .main-about .staff .tab-holder ul a:visited {
+.main-about .staff .tab-holder ul a:active,
+.main-about .staff .tab-holder ul a:visited {
   color: #000000;
 }
 .main-about .staff .tab-holder ul a.active {
@@ -163,6 +164,11 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 1100px) {
+  .text, .picture {
+    grid-column: 1/-1;
+  }
+}
 .appointment {
   background-image: url("../imgs/bg_form.png");
   background-position: center;
@@ -472,9 +478,6 @@ header .nav ul li .special-btn:hover {
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-bottom: 10%;
 }
 .gallery h2 {
@@ -488,8 +491,8 @@ header .nav ul li .special-btn:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 40%;
-  height: 50vh;
+  width: 60%;
+  height: 500px;
   overflow: hidden;
   margin: 0;
 }
@@ -500,7 +503,7 @@ header .nav ul li .special-btn:hover {
   position: absolute;
   opacity: 0;
   transition: all 0.8s;
-  width: 40%;
+  width: 50%;
 }
 .gallery__wrap {
   display: flex;
@@ -508,7 +511,6 @@ header .nav ul li .special-btn:hover {
   align-items: center;
 }
 .gallery button {
-  margin: 20px 50px 0;
   width: 75px;
   height: 75px;
   border: none;
@@ -528,6 +530,15 @@ header .nav ul li .special-btn:hover {
   background-size: cover;
 }
 
+@media screen and (max-width: 1100px) {
+  .gallery .imgs {
+    height: 250px;
+    width: 60%;
+  }
+  .gallery .imgs img {
+    width: 60%;
+  }
+}
 .services-body main {
   padding: 120px 15% 120px 15%;
 }
@@ -583,7 +594,7 @@ header .nav ul li .special-btn:hover {
   padding-left: 5px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
   .services-holder {
     margin-bottom: 150px;
   }
