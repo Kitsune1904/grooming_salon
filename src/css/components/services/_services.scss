@@ -1,0 +1,80 @@
+@use "../../abstracts" as *;
+
+.services-body {
+  main {
+    padding: 120px 15% 120px 15%;
+    .service {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin: 20px 0;
+
+        h2 {
+          font-size: $font-size-large;
+        }
+
+        a {
+          background-color: $color-bg-secondary;
+          color: $color-neutral-light;
+          padding: 10px;
+          border-radius: 8px;
+          text-transform: uppercase;
+          font-size: $font-size-medium;
+        }
+
+        a:hover {
+          background-color: #ed7651;
+          color: $color-neutral-light;
+          box-shadow: 0 0 8px 8px #ff6a3d83;
+          transition: 0.5s;
+        }
+      }
+
+      .services-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-family: Arial;
+        gap: 5%;
+
+        .special-title {
+          font-family: $font-family;
+          font-size: $font-size-medium;
+          color: #ff5e2c;
+          border: none;
+        }
+
+        .special-cost {
+          font-weight: 700;
+          border-bottom: 1px solid $color-neutral-dark;
+        }
+
+        li {
+          line-height: 2.5;
+          border-bottom: 1px solid rgb(158, 158, 158);
+        }
+
+        .add-ons {
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p:last-child {
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .services-holder {
+    margin-bottom: 150px;
+    ul {
+      grid-column: 1/-1;
+    }
+  }
+}
