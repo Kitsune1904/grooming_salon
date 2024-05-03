@@ -33,3 +33,9 @@
     line-height: 1.2;
   }
 }
+
+@media screen and (max-height: 700px) {
+  .values {
+    height: 30vh;
+  }
+}
