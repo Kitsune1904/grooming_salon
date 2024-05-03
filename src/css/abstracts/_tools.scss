@@ -1,26 +1,35 @@
-// @font-face {
-//     font-family: "Jua", sans-serif;
-//     src: url('../../fonts/Jua-Regular.ttf') format('ttf');
-// }
+
 $color-bg-primary: #F3E2D8;
 $color-bg-secondary: #E08D73;
 $color-neutral-dark: #000000;
 $color-neutral-light: #FFFFFF;
+$color-services-comp-dogs: #2F3D5D;
+$color-services-molt-cats: #866D66;
+$color-services-nails-dogs: #123949;
+$color-services-comp-cats: #CCB3AB;
+$color-services-molt-dogs: #6C7987;
+$color-services-nails-cats: #7D695F;
+$color-text-shadow: 6px 4px 4px #2223238f;
 
 
 $gap-small: 10%;
 $gap-medium: 20%;
+$align-self-center: center;
 
 
 $font-family: "Jua", sans-serif;
+$font-family-arial: Arial, Helvetica, sans-serif;
 $font-size: 14px;
+$font-size-medium-large: 26px;
 $font-size-large: 32px;
 $font-size-medium: 18px;
+$font-size-largeL: 48px;
 $upper-case-text-transformation: uppercase;
+$text-align-center: center;
 
 $font-weight: 400;
 
-$container-width: 70vw;
+$container-width: 77%;
 $button-border-radius: 10px; 
 
 @mixin info-action-button {
@@ -41,10 +50,27 @@ $button-border-radius: 10px;
     align-items: center;
 }
 
+@mixin display-flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin display-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 @mixin img-bg-position {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
+}
+
+@mixin grid-center {
+    display: grid;
+    justify-content: center;
 }

@@ -1,6 +1,7 @@
 @use "../../abstracts" as *;
 
-main {
+.main-about {
+  padding-top: 100px;
   .about-holder,
   .hostory-holder {
     display: grid;
@@ -37,13 +38,78 @@ main {
 
   .staff {
     padding: 2% 15%;
-    
+
     h2 {
       font-size: $font-size-large;
       text-align: center;
       margin-bottom: 30px;
     }
-    .tabs {
+
+    .tab-holder {
+      ul {
+        display: flex;
+        align-items: center;
+        background-color: $color-bg-primary;
+        padding: 10px;
+        border-radius: 8px;
+        height: 60px;
+
+        li,
+        a {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        a {
+          padding: 6px 12px;
+          border-radius: 8px;
+          background-color: $color-bg-primary;
+          margin-right: 10px;
+        }
+
+        a:active, a:visited {
+          color: $color-neutral-dark;
+        }
+
+        a.active {
+          background-color: $color-neutral-light;
+          color: $color-neutral-dark;
+        }
+      }
+
+      .card-hoder {
+        display: none;
+        margin: 20px 0;
+        transition: 0.8s;
+
+      }
+
+      .card {
+        text-align: center;
+        img {
+          width: 90%;
+        }
+
+        h3 {
+          font-size: $font-size-large;
+          margin: 10px 0;
+        }
+
+        p {
+          font-family: Arial;
+        }
+      }
+
+      .card-hoder:target {
+        display: flex;
+      }
+    }
+
+    /* .tabs {
       display: flex;
       align-items: center;
       position: relative;
@@ -114,8 +180,6 @@ main {
       .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
         display: grid;
       }
-    }
+    } */
   }
 }
-
-

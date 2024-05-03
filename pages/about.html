@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="../src/css/style.css" />
   </head>
   <body>
-    <body class="about">
+    <body class="about-body">
       <header>
         <div class="logo">
-          <a href="">
+          <a href="../index.html">
             <img src="../src/imgs/logo-paws.png" alt="paws" />
           </a>
           <h1>Happy Paws</h1>
@@ -40,7 +40,7 @@
           </ul>
         </div>
       </header>
-      <main>
+      <main class="main-about">
         <div class="about-holder">
           <div class="text">
             <h2>About Happy Paws</h2>
@@ -66,7 +66,10 @@
         </div>
         <div class="hostory-holder">
           <div class="picture">
-            <img src="../src/imgs/history_of_grooming.png" alt="" />
+            <img
+              src="../src/imgs/history_of_grooming.png"
+              alt="dog with historical items"
+            />
           </div>
           <div class="text">
             <h2>Historical note about grooming</h2>
@@ -85,50 +88,74 @@
         </div>
         <div class="staff">
           <h2>Our masters</h2>
-          <ul class="tabs">
-            <li class="tab">
-              <input type="radio" name="tabs" checked="checked" id="tab1" />
-              <label for="tab1"> <img src="../src/imgs/cat.svg" alt="cat face"> Cats groomer</label>
-              <div id="tab-content1" class="content">
-                <div class="card">
-                    <img src="../src/imgs/red_cat_groomer.png" alt="red cat and groomer">
-                    <h3>Monica</h3>
-                    <p>Work experience: 2 years</p>
-                </div>
-                <div class="card">
-                    <img src="../src/imgs/pers_groomer.png" alt="cat with long white hair and groomer">
-                    <h3>Evelin</h3>
-                    <p>Work experience: 3 years</p>
-                </div>
-                <div class="card">
-                    <img src="../src/imgs/wild_cat_groomer.png" alt="wild cat with groomer">
-                    <h3>Katrin</h3>
-                    <p>Work experience: 5 years</p>
-                </div>
+          <div class="tab-holder">
+            <ul>
+              <li>
+                <a href="#firstTab" class="tab"
+                  ><img src="../src/imgs/cat.svg" alt="cat face" />Cats
+                  groomer</a
+                >
+              </li>
+              <li>
+                <a href="#secondTab" class="tab"
+                  ><img src="../src/imgs/dog.svg" alt="dogs face" />Dogs
+                  groomer</a
+                >
+              </li>
+            </ul>
+            <div class="card-hoder" id="firstTab">
+              <div class="card">
+                <img
+                  src="../src/imgs/red_cat_groomer.png"
+                  alt="red cat and groomer"
+                />
+                <h3>Monica</h3>
+                <p>Work experience: 2 years</p>
               </div>
-            </li>
-            <li class="tab">
-              <input type="radio" name="tabs" id="tab2" />
-              <label for="tab2"> <img src="../src/imgs/dog.svg" alt="dogs face"> Dogs groomer</label>
-              <div id="tab-content2" class="content">
-                <div class="card">
-                    <img src="../src/imgs/poodel_grooming.png" alt="white dog with groomer">
-                    <h3>Kristin</h3>
-                    <p>Work experience: 2 years</p>
-                </div>
-                <div class="card">
-                    <img src="../src/imgs/spitc_with_man.png" alt="white dog with man groomer">
-                    <h3>David</h3>
-                    <p>Work experience: 4 years</p>
-                </div>
-                <div class="card">
-                    <img src="../src/imgs/red_poodel.png" alt="red poodel with groomer">
-                    <h3>Martin</h3>
-                    <p>Work experience: 5 years</p>
-                </div>
+              <div class="card">
+                <img
+                  src="../src/imgs/pers_groomer.png"
+                  alt="cat with long white hair and groomer"
+                />
+                <h3>Evelin</h3>
+                <p>Work experience: 3 years</p>
               </div>
-            </li>
-          </ul>
+              <div class="card">
+                <img
+                  src="../src/imgs/wild_cat_groomer.png"
+                  alt="wild cat with groomer"
+                />
+                <h3>Katrin</h3>
+                <p>Work experience: 5 years</p>
+              </div>
+            </div>
+            <div class="card-hoder" id="secondTab">
+              <div class="card">
+                <img
+                  src="../src/imgs/poodel_grooming.png"
+                  alt="white dog with groomer"
+                />
+                <h3>Kristin</h3>
+                <p>Work experience: 2 years</p>
+              </div>
+              <div class="card">
+                <img
+                  src="../src/imgs/spitc_with_man.png"
+                  alt="white dog with man groomer"
+                />
+                <h3>David</h3>
+                <p>Work experience: 4 years</p>
+              </div>
+              <div class="card">
+                <img
+                  src="../src/imgs/red_poodel.png"
+                  alt="red poodel with groomer"
+                />
+                <h3>Martin</h3>
+                <p>Work experience: 5 years</p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer>
@@ -139,10 +166,10 @@
           <p>Find us in social media:</p>
           <div class="img-holder">
             <a href="https://www.facebook.com/?locale=en_US"
-              ><img src="../src/imgs/fb.svg" alt="fb"
+              ><img src="../src/imgs/fb.svg" alt="facebook"
             /></a>
             <a href="https://en.m.wikipedia.org/wiki/Instagram"
-              ><img src="../src/imgs/insta.svg" alt="insta"
+              ><img src="../src/imgs/insta.svg" alt="instagram"
             /></a>
             <a href="https://en.wikipedia.org/wiki/Telegram_(software)">
               <img src="../src/imgs/telega.svg" alt="telegram"
@@ -150,6 +177,7 @@
           </div>
         </div>
       </footer>
+      <script src="../tabs.js"></script>
     </body>
   </body>
 </html>

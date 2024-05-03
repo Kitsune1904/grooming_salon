@@ -1,8 +1,12 @@
 @use "../../abstracts" as *;
 
 header {
+  position: fixed;
   display: flex;
+  z-index: 100;
   justify-content: space-between;
+  justify-self: stretch;
+  width: 100%;
   padding: 0.5% 15%;
   background-color: $color-bg-primary;
 
@@ -54,6 +58,7 @@ header {
           background-color: #ed7651;
           color: $color-neutral-light;
           box-shadow: 0 0 8px 8px #ff6a3d83;
+          transition: 0.5s;
         }
       }
     }

@@ -1,26 +1,35 @@
 @use "../../abstracts" as *;
 
 .values {
-    @include img-bg-position;
-    background-image: url(../imgs/bg-main.svg);
-    height: 60vh;
-    &__wrap {
-        display: flex;
-        flex-direction: column;
-        gap: $gap-medium;
-        padding: 5% 55% 0 0;
-    }
-    &__btn {
-        @include info-action-button;
-        gap: 2%;
-    }
-    &__heading {
-        font-size: 38px;
-        padding-top: 10%;
-    }
-    &__text {
-        font-size: $font-size-medium;
-        padding-top: 8%;
-        line-height: 29px;
-    }
+  @include img-bg-position;
+  background-image: url(../imgs/bg-main.svg);
+  height: 60vh;
+  background-attachment: fixed;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+    padding: 9% 50% 0 15%;
+  }
+  &__btn {
+    @include info-action-button;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  &__btn:hover {
+    background-color: #ed7651;
+    color: $color-neutral-light;
+    box-shadow: 0 0 8px 8px #ff6a3d83;
+    transition: 0.5s;
+  }
+  h2 {
+    font-size: 38px;
+    margin-top: 20px;
+  }
+  &__text {
+    font-family: $font-family-arial;
+    font-size: $font-size-medium-large;
+    margin-top: 20px;
+    line-height: 1.2;
+  }
 }
