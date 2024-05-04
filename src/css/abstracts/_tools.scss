@@ -9,7 +9,7 @@ $color-services-nails-dogs: #123949;
 $color-services-comp-cats: #CCB3AB;
 $color-services-molt-dogs: #6C7987;
 $color-services-nails-cats: #7D695F;
-$color-text-shadow: 6px 4px 4px #2223238f;
+$color-text-shadow: 2px 2px 4px rgb(27 28 28 / 86%);
 
 
 $gap-small: 10%;
@@ -30,7 +30,7 @@ $text-align-center: center;
 $font-weight: 400;
 
 $container-width: 77%;
-$button-border-radius: 10px; 
+$button-border-radius: 10px;
 
 @mixin info-action-button {
     display: flex;

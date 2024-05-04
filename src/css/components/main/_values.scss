@@ -34,8 +34,21 @@
   }
 }
 
-@media screen and (max-height: 800px) {
-  .values {
-    height: 30vh;
+@media screen and (max-width: 700px) {
+  main {
+    .values {
+      height: 50vh;
+      &__wrap {
+        padding: 110px 45% 0 5%;
+        div {
+          h2 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
   }
 }

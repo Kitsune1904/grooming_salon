@@ -7,7 +7,7 @@
       .title {
         display: flex;
         justify-content: space-between;
-        align-content: center;
+        align-items: center;
         margin: 20px 0;
 
         h2 {
@@ -17,10 +17,11 @@
         a {
           background-color: $color-bg-secondary;
           color: $color-neutral-light;
-          padding: 10px;
+          padding: 0 10px;
           border-radius: 8px;
           text-transform: uppercase;
           font-size: $font-size-medium;
+          line-height: 40px;
         }
 
         a:hover {
@@ -54,7 +55,6 @@
           border-bottom: 1px solid rgb(158, 158, 158);
         }
 
-
         .add-ons {
           li {
             display: flex;
@@ -72,10 +72,16 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .services-holder {
-    margin-bottom: 150px;
-    ul, .add-ons {
-      grid-column: 1/-1;
+  .services-body {
+    main {
+      padding: 90px 5% 0 5%;
+      .services-holder {
+        margin-bottom: 150px;
+        ul,
+        .add-ons {
+          grid-column: 1/-1;
+        }
+      }
     }
   }
 }

@@ -28,19 +28,44 @@
             <a href="../index.html">home</a>
           </li>
           <li>
-            <a href="../pages/about.html">about</a>
+            <a href="./about.html">about</a>
           </li>
           <li>
-            <a href="../pages/services.html">services</a>
+            <a href="./services.html">services</a>
           </li>
           <li>
             <a href="#" class="special-btn">appointment</a>
           </li>
         </ul>
       </div>
+      <label class="burger-holder">
+        <input type="checkbox" hidden/>
+        <svg viewBox="0 0 24 24" width="36" height="36" class="opened-burger">
+          <title>close</title>
+          <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+        </svg>
+        <svg viewBox="0 0 24 24" width="36" height="36" class="hidden-burger">
+          <title>menu</title>
+          <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>
+        <ul>
+          <li>
+            <a href="../index.html">home</a>
+          </li>
+          <li>
+            <a href="./about.html">about</a>
+          </li>
+          <li>
+            <a href="./services.html">services</a>
+          </li>
+          <li>
+            <a href="#" class="special-btn">appointment</a>
+          </li>
+        </ul>
+      </label>
     </header>
-    <main>
-      <div class="form-holder">
+    <main >
+      <div class="form">
         <h2>Appointment form</h2>
         <form method="POST" action="https://fom.in.ua/echo">
           <div class="simple">
@@ -94,44 +119,43 @@
 
           <div class="special">
             <p>Chooose add-ons</p>
-            <div class="holder">
-              <div>
-                <input
+            <label>
+              <input
                   type="checkbox"
                   id="teeth"
                   name="add-ons"
                   value="Teeth Brushing"
                 />
-                <label for="teeth">teeth brushing</label>
-              </div>
-              <div>
-                  <input
+                teeth brushing
+            </label>
+            <label>
+              <input
                   type="checkbox"
                   id="gland"
                   name="add-ons"
                   value="anal gland expression"
                   />
-                  <label for="gland">anal gland expression (only dogs)</label>
-                </div>
-                <div>
-                  <input
+                  anal gland expression (only dogs)
+            </label>
+            <label>
+              <input
                     type="checkbox"
                     id="paws"
                     name="add-ons"
                     value="paw soothing treatment"
                   />
-                  <label for="paws">paw soothing treatment</label>
-                </div>
-              <div>
-                <input
+                  paw soothing treatment
+            </label>
+            <label>
+              <input
                   type="checkbox"
                   id="massage"
                   name="add-ons"
                   value="deep muscle massage"
                 />
-                <label for="massage">deep muscle massage (only dogs)</label>
-              </div>
-            </div>
+                deep muscle massage (only dogs)
+            </label>
+            
           </div>
           <button type="submit">Submit</button>
         </form>

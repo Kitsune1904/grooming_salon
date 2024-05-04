@@ -5,7 +5,7 @@ footer {
   background-color: $color-bg-primary;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   font-family: Arial;
 
   .soсial-media {
@@ -16,5 +16,23 @@ footer {
     p {
       margin-right: 10px;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 0.5% 5%;
+    display: block;
+    .copyright {
+      p {
+        display: none;
+      }
+    }
+    .soсial-media {
+          img {
+      width: 24px;
+    }
+    }
+
   }
 }

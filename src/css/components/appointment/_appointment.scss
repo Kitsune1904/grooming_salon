@@ -13,15 +13,15 @@
   main {
     padding: 5% 15%;
 
-    .form-holder {
+    .form {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      border-radius: 10px;
       padding: 40px;
       width: 550px;
       height: 550px;
-      transform: translate(10%, 20%);      background: rgba(255, 255, 255, 0.16);
+      transform: translate(10%, 20%);
+      background: rgba(255, 255, 255, 0.16);
       border-radius: 16px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5.3px);
@@ -56,27 +56,28 @@
             border-radius: 8px;
           }
         }
+
+        @media (max-width: 700px) {
+          & > div {
+            flex-direction: column;
+            align-items: start;
+            gap: 6px;
+          }
+        }
       }
       .special {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr;
         p {
+          grid-column: 1/-1;
           font-size: $font-size-medium;
         }
-
-        .holder {
-          margin: 10px 0;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-
-          div {
-            width: 230px;
-            margin-bottom: 10px;
-            input {
-            margin-right: 5px;
-          }
-          }
-
-          
+        input {
+          margin-right: 8px;
+        }
+        @media (max-width: 700px) {
+          grid-template-columns: 1fr;
         }
       }
 
@@ -101,9 +102,26 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .appointment {
+    main {
+      padding: 0;
 
-@media screen and (max-height: 700px) {
-  .values {
-    height: 30vh;
+      .form {
+        width: 85%;
+        padding: 10px;
+        height: auto;
+
+        h2 {
+          font-size: 28px;
+        }
+        .simple {
+          div {
+            padding: 5px 10px;
+          }
+        }
+
+      }
+    }
   }
 }
