@@ -3,13 +3,13 @@
 .values {
   @include img-bg-position;
   background-image: url(../imgs/bg-main.svg);
-  height: 60vh;
+  height: auto;
   background-attachment: fixed;
   &__wrap {
     display: flex;
     flex-direction: column;
     gap: $gap-medium;
-    padding: 9% 50% 0 15%;
+    padding: 9% 50% 5% 15%;
   }
   &__btn {
     @include info-action-button;
@@ -37,9 +37,9 @@
 @media screen and (max-width: 700px) {
   main {
     .values {
-      height: 50vh;
+      height: auto;
       &__wrap {
-        padding: 110px 45% 0 5%;
+        padding: 20% 45% 20px 5%;
         div {
           h2 {
             font-size: 24px;
