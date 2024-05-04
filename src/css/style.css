@@ -169,7 +169,7 @@ a {
   display: grid;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
   .main-about {
     padding-top: 80px;
   }
@@ -463,14 +463,14 @@ header .burger-holder .opened-burger {
   width: 100%;
   position: relative;
   background-image: url(../imgs/bg-main.svg);
-  height: 60vh;
+  height: auto;
   background-attachment: fixed;
 }
 .values__wrap {
   display: flex;
   flex-direction: column;
   gap: 20%;
-  padding: 9% 50% 0 15%;
+  padding: 9% 50% 5% 15%;
 }
 .values__btn {
   display: flex;
@@ -505,10 +505,10 @@ header .burger-holder .opened-burger {
 
 @media screen and (max-width: 700px) {
   main .values {
-    height: 50vh;
+    height: auto;
   }
   main .values__wrap {
-    padding: 110px 45% 0 5%;
+    padding: 20% 45% 20px 5%;
   }
   main .values__wrap div h2 {
     font-size: 24px;
@@ -575,13 +575,14 @@ header .burger-holder .opened-burger {
     padding: 0 5% 20px 5%;
   }
   .services h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .services__wrap {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
   .services p {
+    font-size: 20px;
     padding: 30px 10px 10px 10px;
   }
 }
@@ -633,7 +634,7 @@ header .burger-holder .opened-burger {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
   .about {
     padding: 0 5%;
   }
@@ -644,7 +645,7 @@ header .burger-holder .opened-burger {
     grid-column: 1/-1;
   }
   .about .about__salon div h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
   .about .about__salon div p {
@@ -710,7 +711,7 @@ header .burger-holder .opened-burger {
 
 @media screen and (max-width: 1100px) {
   .gallery h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .gallery .imgs {
     height: 200px;
