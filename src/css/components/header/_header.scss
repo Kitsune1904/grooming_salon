@@ -116,7 +116,7 @@ header {
       display: block;
     }
 
-    input:checked ~ .hidden-burger{
+    input:checked ~ .hidden-burger {
       display: none;
     }
 
@@ -124,15 +124,13 @@ header {
       display: block;
     }
 
-    .opened-burger{
+    .opened-burger {
       display: none;
     }
   }
-
-
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   header {
     padding: 1% 5%;
     .nav {
@@ -143,5 +141,4 @@ header {
       display: block;
     }
   }
-    
 }

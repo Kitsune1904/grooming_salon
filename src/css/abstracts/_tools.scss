@@ -1,21 +1,18 @@
-
-$color-bg-primary: #F3E2D8;
-$color-bg-secondary: #E08D73;
+$color-bg-primary: #f3e2d8;
+$color-bg-secondary: #e08d73;
 $color-neutral-dark: #000000;
-$color-neutral-light: #FFFFFF;
-$color-services-comp-dogs: #2F3D5D;
-$color-services-molt-cats: #866D66;
+$color-neutral-light: #ffffff;
+$color-services-comp-dogs: #2f3d5d;
+$color-services-molt-cats: #866d66;
 $color-services-nails-dogs: #123949;
-$color-services-comp-cats: #CCB3AB;
-$color-services-molt-dogs: #6C7987;
-$color-services-nails-cats: #7D695F;
+$color-services-comp-cats: #ccb3ab;
+$color-services-molt-dogs: #6c7987;
+$color-services-nails-cats: #7d695f;
 $color-text-shadow: 2px 2px 4px rgb(27 28 28 / 86%);
-
 
 $gap-small: 10%;
 $gap-medium: 20%;
 $align-self-center: center;
-
 
 $font-family: "Jua", sans-serif;
 $font-family-arial: Arial, Helvetica, sans-serif;
@@ -33,44 +30,44 @@ $container-width: 77%;
 $button-border-radius: 10px;
 
 @mixin info-action-button {
-    display: flex;
-    background-color: $color-bg-secondary;
-    color: $color-neutral-light;
-    font-size: $font-size-medium;
-    white-space: nowrap;
-    text-align: center;
-    padding: 12px;
-    border-radius: $button-border-radius;
-    width: fit-content;
+  display: flex;
+  background-color: $color-bg-secondary;
+  color: $color-neutral-light;
+  font-size: $font-size-medium;
+  white-space: nowrap;
+  text-align: center;
+  padding: 12px;
+  border-radius: $button-border-radius;
+  width: fit-content;
 }
 
 @mixin display-flex-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin display-flex-row-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin display-flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @mixin img-bg-position {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
 }
 
 @mixin grid-center {
-    display: grid;
-    justify-content: center;
+  display: grid;
+  justify-content: center;
 }

@@ -1,71 +1,95 @@
 @use "../../abstracts" as *;
 
 .services {
-    padding: 0 15%;
-    h2 {
-        font-size: $font-size-largeL;
-        text-align: $text-align-center;
-        margin: 20px 0
+  padding: 0 15%;
+  h2 {
+    font-size: $font-size-largeL;
+    text-align: $text-align-center;
+    margin: 20px 0;
+  }
+  &__wrap {
+    @include grid-center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    :nth-child(2) p {
+      background: linear-gradient(
+        0deg,
+        $color-services-molt-cats 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
     }
-    &__wrap {
-        @include grid-center;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-        :nth-child(2) p {
-            background: linear-gradient(0deg, $color-services-molt-cats 70%, rgba(0,0,0,0) 100%);
-        }
-        :nth-child(3) p {
-            background: linear-gradient(0deg, $color-services-nails-dogs 70%, rgba(0,0,0,0) 100%);
-        }
-        :nth-child(4) p {
-            background: linear-gradient(0deg, $color-services-comp-cats 70%, rgba(0,0,0,0) 100%);
-        }
-        :nth-child(5) p {
-            background: linear-gradient(0deg, $color-services-molt-dogs 70%, rgba(0,0,0,0) 100%);
-        }
-        :nth-child(6) p {
-            background: linear-gradient(0deg, $color-services-nails-cats 70%, rgba(0,0,0,0) 100%);
-        }
+    :nth-child(3) p {
+      background: linear-gradient(
+        0deg,
+        $color-services-nails-dogs 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
     }
-    img {
-        width: 100%;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
+    :nth-child(4) p {
+      background: linear-gradient(
+        0deg,
+        $color-services-comp-cats 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
     }
-    p {
-        position: relative;
-        background: linear-gradient(0deg, $color-services-comp-dogs 70%, rgba(0,0,0,0) 100%);
-        color: $color-neutral-light;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: $font-size-medium-large;
-        height: 100px;
-        margin-top: -32px;
-        z-index: 20;
-        padding: 30px 0 10px 0;
-        width: 100%;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-shadow: $color-text-shadow;
+    :nth-child(5) p {
+      background: linear-gradient(
+        0deg,
+        $color-services-molt-dogs 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
     }
+    :nth-child(6) p {
+      background: linear-gradient(
+        0deg,
+        $color-services-nails-cats 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+  img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  p {
+    position: relative;
+    background: linear-gradient(
+      0deg,
+      $color-services-comp-dogs 70%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    color: $color-neutral-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: $font-size-medium-large;
+    height: 100px;
+    margin-top: -32px;
+    z-index: 20;
+    padding: 30px 0 10px 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-shadow: $color-text-shadow;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .services {
-        padding: 0 5% 20px 5%;
-        h2 {
-            font-size: 28px;
-        }
-        &__wrap {
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        p {
-            font-size: 20px;
-            padding: 30px 10px 10px 10px;
-        }
+  .services {
+    padding: 0 5% 20px 5%;
+    h2 {
+      font-size: 28px;
     }
+    &__wrap {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      padding: 30px 10px 10px 10px;
+    }
+  }
 }
