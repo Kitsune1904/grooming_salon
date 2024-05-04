@@ -49,11 +49,6 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  width: 77%;
-  margin: 0 auto;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
