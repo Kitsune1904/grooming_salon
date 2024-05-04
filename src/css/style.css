@@ -299,7 +299,10 @@ a {
     font-size: 28px;
   }
   .appointment main .form .simple div {
-    padding: 5px 10px;
+    padding: 10px;
+  }
+  .appointment main .form .simple div input, .appointment main .form .simple div select {
+    width: 100%;
   }
 }
 footer {
