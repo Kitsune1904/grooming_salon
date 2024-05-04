@@ -572,13 +572,17 @@ header .burger-holder .opened-burger {
 
 @media screen and (max-width: 700px) {
   .services {
-    padding-bottom: 20px;
+    padding: 0 5% 20px 5%;
   }
   .services h2 {
     font-size: 32px;
   }
   .services__wrap {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .services p {
+    padding: 30px 10px 10px 10px;
   }
 }
 .about {

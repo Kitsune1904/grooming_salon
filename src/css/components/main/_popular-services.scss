@@ -54,12 +54,17 @@
 
 @media screen and (max-width: 700px) {
     .services {
-        padding-bottom: 20px;
+        padding: 0 5% 20px 5%;
         h2 {
             font-size: 32px;
         }
         &__wrap {
             grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        p {
+            padding: 30px 10px 10px 10px;
         }
     }
 }
