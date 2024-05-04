@@ -312,7 +312,7 @@ footer {
   background-color: #F3E2D8;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   font-family: Arial;
 }
 footer .soсial-media {
